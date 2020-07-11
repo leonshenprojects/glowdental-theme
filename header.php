@@ -233,4 +233,5 @@ do_action( 'minim_hook_top' ); ?>
             } ?>
             <!-- ** Container ** -->
             <div class="<?php echo esc_attr($class);?>"><?php
-			do_action( 'minim_hook_content_before' ); ?>
+            do_action( 'minim_hook_content_before' ); ?>
+            

@@ -1,1 +1,36 @@
 .is-sticky .menu-wrapper { min-height: auto; }
+
+.main-header #menu-wrapper { min-height: auto; }
+
+#header .main-header-wrapper {
+    padding-bottom: 0;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.headerContainer #logo {
+    display: inline-flex;
+}
+
+.headerContainer .dt-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 16px;
+}
+
+.headerContainer .dt-menu-toggle .dt-menu-toggle-icon {
+    right: auto;
+    top: auto;
+    bottom: auto;
+}
+
+@media (min-width: 768px) {
+    .headerContainer .dt-menu-toggle {
+        display: none;
+    }
+}

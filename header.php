@@ -46,9 +46,33 @@ do_action( 'minim_hook_top' ); ?>
 				$topcontent =  get_theme_mod( 'top-bar-content', '');
 				if( ($topbar) && isset($topcontent) && $topcontent != '' ):?>
         	        <div class="top-bar">
-            	        <div class="container"><?php
-							$content = do_shortcode( stripslashes($topcontent) );
-							echo minim_wp_kses( $content );?>	
+            	        <div class="container">
+                            <div class="topBar">
+                                <div class="topBar__left">
+                                    <a class="customButton1" href="#">
+                                        <span>BOOK NOW</span>
+                                    </a>
+                                </div>
+
+                                <div class="topBar__right">
+                                    <a class="topBar__item customIconButton1" href="mailto:info@glowdental.co.nz" target="_blank">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+
+                                    <a class="topBar__item customIconButton1" href="facebook.com" target="_blank">
+                                        <i class="fa fa-facebook-f"></i>
+                                    </a>
+
+                                    <a class="topBar__item customIconButton1" href="instagram.com" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+
+                                    <a class="topBar__item customButton1 customButton1--collapsableLabel" href="tel:096537864">
+                                        <i class="fa fa-phone"></i>
+                                        <span class="customButton1__label">(09) 653 7864</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div><?php
 				endif; ?>

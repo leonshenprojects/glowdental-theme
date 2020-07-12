@@ -1,0 +1,50 @@
+.customButton1 {
+    display: flex;
+    align-items: center;
+    font-family: "PT Serif", Georgia, serif;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #3bb2d0;
+    color: #ffffff;
+    line-height: normal;
+    padding: 4px 10px;
+}
+
+.customButton1:hover {
+    color: #ffffff !important;
+}
+
+.customButton1 .fa {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.customButton1--collapsableLabel .customButton1__label {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .customButton1--collapsableLabel .fa {
+        margin-right: 6px;
+    }
+
+    .customButton1--collapsableLabel .customButton1__label {
+        display: block;
+    }
+}
+
+.customIconButton1 {
+    display: flex;
+    align-items: center;
+    font-family: "PT Serif", Georgia, serif;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #3bb2d0;
+    color: #ffffff;
+    line-height: normal;
+    padding: 4px 10px;
+}
+
+.customIconButton1 .fa {
+    color: #ffffff;
+}

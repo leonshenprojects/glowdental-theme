@@ -1,3 +1,7 @@
+html {
+    background-color: #197c95 !important;
+}
+
 .is-sticky .menu-wrapper { min-height: auto; }
 
 .main-header #menu-wrapper { min-height: auto; }
@@ -21,6 +25,7 @@
     align-items: center;
     justify-content: center;
     padding: 15px 16px;
+    border-radius: 4px;
 }
 
 .headerContainer .dt-menu-toggle .dt-menu-toggle-icon {
@@ -34,3 +39,22 @@
         display: none;
     }
 }
+
+#header .top-bar {
+    background-color: #197c95;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+.topBar__left, .topBar__right {
+    display: flex;
+}
+
+.topBar__right .topBar__item {
+    margin-left: 6px;
+}
+

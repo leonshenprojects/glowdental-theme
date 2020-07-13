@@ -41,6 +41,7 @@ html {
 }
 
 #header .top-bar {
+    padding: 0;
     background-color: #197c95;
 }
 

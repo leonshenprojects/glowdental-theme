@@ -1,3 +1,19 @@
 #footer .footer-copyright {
     color: #ffffff;
 }
+
+#footer .footer-widgets .textwidget a {
+    color: #ffffff;
+}
+
+#footer .footer-widgets .textwidget a:hover {
+    color: #000000 !important;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+    .textwidget .dt-sc-contact-info span {
+        width: auto !important;
+        margin: 0 auto 30px !important;
+        font-size: 65px !important;
+    }	
+ }

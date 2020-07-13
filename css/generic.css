@@ -8,10 +8,12 @@
     color: #ffffff;
     line-height: normal;
     padding: 4px 10px;
+    transition: all 0.5s ease;
 }
 
 .customButton1:hover {
     color: #ffffff !important;
+    background-color: #74767a;
 }
 
 .customButton1 .fa {
@@ -43,8 +45,13 @@
     color: #ffffff;
     line-height: normal;
     padding: 4px 10px;
+    transition: all 0.5s ease;
 }
 
 .customIconButton1 .fa {
     color: #ffffff;
+}
+
+.customIconButton1:hover {
+    background-color: #3bb2d0;
 }

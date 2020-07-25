@@ -16,6 +16,14 @@
     display: inline-flex;
 }
 
+.headerContainer #logo a {
+    height: 60px;
+}
+
+.is-sticky .headerContainer #logo a {
+    height: 45px;
+}
+
 .headerContainer .dt-menu-toggle {
     display: flex;
     align-items: center;

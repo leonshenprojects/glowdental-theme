@@ -11,6 +11,12 @@
     width: 100%;
 }
 
+.customForm__submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
 .customForm .column {
     margin-top: 25px;
 }
@@ -39,6 +45,11 @@
 
 .customForm .form-required {
     color: red;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    border-radius: 50px;
+    padding: 19px 40px 19px;
 }
 
 @media only screen and (max-width: 767px) {	

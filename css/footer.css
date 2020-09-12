@@ -10,6 +10,15 @@
     color: #000000 !important;
 }
 
+#footer .footer-copyright .column a {
+    text-transform: none;
+    color: #ffffff;
+}
+
+#footer .footer-copyright .column a:hover {
+    color: #000000;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {	
     .textwidget .dt-sc-contact-info span {
         width: auto !important;

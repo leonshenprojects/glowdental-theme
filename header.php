@@ -63,13 +63,13 @@ do_action( 'minim_hook_top' ); ?>
                                         <i class="fa fa-facebook-f"></i>
                                     </a>
 
-                                    <a class="topBar__item customIconButton1" href="instagram.com" target="_blank">
+                                    <a class="topBar__item customIconButton1" href="https://www.instagram.com/glowdentalnz" target="_blank">
                                         <i class="fa fa-instagram"></i>
                                     </a>
 
-                                    <a class="topBar__item customButton1 customButton1--collapsableLabel" href="tel:096537864">
+                                    <a class="topBar__item customButton1 customButton1--collapsableLabel" href="tel:+6496002774">
                                         <i class="fa fa-phone"></i>
-                                        <span class="customButton1__label">(09) 653 7864</span>
+                                        <span class="customButton1__label">(09) 600 2774</span>
                                     </a>
                                 </div>
                             </div>

@@ -1,0 +1,67 @@
+.customForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customForm__group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customForm .column {
+    margin-top: 25px;
+}
+
+.customForm .column.customForm--group {
+    margin-top: 10px;
+}
+
+.customForm .dt-sc-one-column {
+    width: 74%;
+}
+
+.customForm .dt-sc-one-half {
+    width: 36%;
+}
+
+.customForm .wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.customForm .wpcf7-not-valid {
+    border: 1px;
+    border-style: solid;
+}
+
+.customForm .form-required {
+    color: red;
+}
+
+@media only screen and (max-width: 767px) {	
+    .customForm .column {
+        margin-left: 2%;
+        margin-bottom: 0px;
+    }
+
+    .customForm .dt-sc-one-column {
+        width: 100%;
+    }
+    
+    .customForm .dt-sc-one-half {
+        width: 49%;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .customForm .column {
+        margin-left: 0px;
+    }
+
+    .customForm .dt-sc-one-half {
+        width: 100%;
+    }
+}

@@ -1,0 +1,271 @@
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> First Name: <span class="form-required">*</span>
+            [text* your-first-name] </label>
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Last Name: <span class="form-required">*</span>
+            [text* your-last-name] </label>
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Date Of Birth:
+        [date your-dob] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Occupation / School:
+        [text your-occupation-or-school] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Address: <span class="form-required">*</span>
+        [text* your-address-line-1] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [text your-address-line-2]
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first customForm--group">
+        [text* your-city placeholder "City"]
+    </div>
+
+    <div class="column dt-sc-one-half customForm--group">
+        [text* your-post-code placeholder "Postal / Zip Code"]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Phone Number: <span class="form-required">*</span>
+        [tel* your-phone] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Your Email: <span class="form-required">*</span>
+        [email* your-email] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Preferred Contact Method:
+        [select your-preferred-contact-method include_blank "Email" "Phone"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> If you are under 16 years, please give the name and address of your parent/guardian:
+        [textarea your-parent-or-guardian] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Name of the person to contact in an emergency:
+        [text your-emergency-contact] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Emergency Contact Phone Number: <span class="form-required">*</span>
+        [tel* your-emergency-contact-phone] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Your Medical Doctor’s name (GP):
+        [text your-GP] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Your Medical Doctor's Phone number if known:
+        [tel your-GP-phone] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> How did you hear of this practice?
+        [checkbox how-you-found-us exclusive "Friend" "Word of mouth" "Google" "Facebook" "Instagram" "Other"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <h3>Medical History</h3>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Are you attending or receiving treatment from a doctor or hospital?
+        [checkbox receiving-treatment exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea treatment-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you been a patient in hospital during the past two years?
+        [checkbox has-been-hospitalised exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea hospitalised-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are you taking any tablets, medicines, pills or drugs?
+        [checkbox taking-medication exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea medication-details placeholder "If yes, please list"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you experienced any allergies or unusual effects from any tablets, drugs, injections or anesthetic, in particular Penicillin or materials such as latex?
+        [checkbox allergies exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea allergy-details placeholder "If yes, please list"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you experienced excessive bleeding/bruising from dental treatment, cuts or scratches?
+        [checkbox excessive-bruising exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea excessive-bruising-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you had any prosthetic surgery? (e.g.- Heart Valve or hip/knee replacement)
+        [checkbox prosthetic-surgery exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea prosthetic-surgery-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> If are you pregnant, how many months? i.e 5 or N/A
+        [text pregnancy-details] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you had any prosthetic surgery? (e.g.- Heart Valve or hip/knee replacement)
+        [checkbox medical-conditions "Heart trouble / pacemaker / angina / stroke / heart murmur / open heart surgery" "Rheumatic fever" "Jaundice/ liver disease" "High blood pressure" "Kidney trouble" "Asthma" "Gastric problems" "Bronchitis or chest problems" "Drug dependence" "Sinus/Hay fever" "Severe headaches" "Hepatitis- specify type A, B, C" "Depressive illness" "Epilepsy/fainting attacks/ blackouts" "Cold sores" "Anaemia" "Diabetes" "Arthritis" "Radiotherapy" "None of these"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea medical-conditions-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you had any Cancer?
+        [checkbox had-cancer exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea cancer-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you taken the drug Fosamax?
+        [checkbox taken-Fosamax exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [textarea Fosamax-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are you HIV positive?
+        [checkbox HIV-positive exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are you at risk to HIV exposure?
+        [checkbox HIV-exposure exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Do you smoke?
+        [checkbox smokes exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Do you carry a warning card?
+        [checkbox carries-warning-card exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are there any other health matters that you think your dentist should know about? If so, please provide the details:
+        [textarea other-health-matters] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> In the event of an emergency, do you require assistance to evacuate the building?
+        [checkbox evacuation-assistance exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <p>Although rare, accidental injury to staff can occur during handling of used instruments. If this happens during the course of your treatment, our practice requires both patient and staff member to undertake a confidential blood test.</p>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Do agree to a blood test?
+        [checkbox blood-test-agreement exclusive "Yes" "No" "Wish to discuss with the dentist"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> How often would you prefer to have recalls sent?
+        [checkbox recall-frequency exclusive "3 Monthly" "6 Monthly" "Yearly"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> How would you prefer to have your recall sent?
+        [checkbox recall-contact-method exclusive "Text Message" "Phone Call" "Email" "Standard Post"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Date of last dental visit:
+        [date last-dental-visit] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Name of your last dentist:
+        [text last-dentist-name] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Reason for today’s visit:
+        [textarea reason-for-visit] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> How often do you brush?
+        [text teeth-brushing-frequency] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> How often do you floss?
+        [text flossing-frequency] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are you eligible for a quote from Work and Income NZ?
+        [checkbox work-and-income-eligibility exclusive "Yes" "No"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Completed by:
+        [checkbox completed-by exclusive "Self" "Parent" "Guardian"] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Today's Date:
+        [date date-today] </label>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> I agree that my submitted data is being collected and stored. <span class="form-required">*</span>
+        [checkbox* data-collection-agreement exclusive "Yes"] </label>
+</div>
+
+[submit "Send"]

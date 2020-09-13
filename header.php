@@ -49,7 +49,7 @@ do_action( 'minim_hook_top' ); ?>
             	        <div class="container">
                             <div class="topBar">
                                 <div class="topBar__left">
-                                    <a class="customButton1" href="#">
+                                    <a class="customButton1" href="/contact-us">
                                         <span>BOOK NOW</span>
                                     </a>
                                 </div>

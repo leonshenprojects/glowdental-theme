@@ -9,6 +9,7 @@ function minim_child_enqueue_styles() {
     wp_enqueue_style( 'custom-form-styles', get_theme_file_uri('/css/customForm.css'), array(), time());
 
     wp_enqueue_script( 'custom-services-scripts', get_theme_file_uri('/js/services.js'), array(), time(), true );
+    wp_enqueue_script( 'custom-staffTiles-scripts', get_theme_file_uri('/js/staffTiles.js'), array(), time(), true );
     wp_enqueue_script( 'custom-font-awesome', 'https://kit.fontawesome.com/c5cc09af3e.js', array(), '1.0.0', true );
 }
 ?>

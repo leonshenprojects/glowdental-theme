@@ -55,3 +55,8 @@
 .customIconButton1:hover {
     background-color: #3bb2d0;
 }
+
+/* Hides staff tile social overlay */
+.customStaffTile .dt-sc-team-thumb-overlay {
+    display: none;
+}

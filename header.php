@@ -59,7 +59,7 @@ do_action( 'minim_hook_top' ); ?>
                                         <i class="fa fa-envelope-o"></i>
                                     </a>
 
-                                    <a class="topBar__item customIconButton1" href="facebook.com" target="_blank">
+                                    <a class="topBar__item customIconButton1" href="https://www.facebook.com/Glow-Dental-Stonefields" target="_blank">
                                         <i class="fa fa-facebook-f"></i>
                                     </a>
 

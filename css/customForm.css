@@ -14,7 +14,12 @@
 .customForm__submit {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.customForm__submit .wpcf7-form-control.wpcf7-submit {
+    margin-top: 0px;
 }
 
 .customForm .column {

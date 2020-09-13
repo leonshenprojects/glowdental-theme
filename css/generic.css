@@ -60,3 +60,9 @@
 .customStaffTile .dt-sc-team-thumb-overlay {
     display: none;
 }
+
+.textwidget pre {
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+}

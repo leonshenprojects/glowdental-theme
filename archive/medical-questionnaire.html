@@ -39,6 +39,10 @@
     </div>
 </div>
 
+<div class="column dt-sc-one-column customForm--group">
+    [text* your-country placeholder "Country"]
+</div>
+
 <div class="column dt-sc-one-column">
     <label> Phone Number: <span class="form-required">*</span></label>
         [tel* your-phone]
@@ -254,13 +258,13 @@
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Completed by:</label>
-        [checkbox completed-by exclusive "Self" "Parent" "Guardian"] 
+    <label> Completed by: <span class="form-required">*</span></label>
+        [checkbox* completed-by exclusive "Self" "Parent" "Guardian"] 
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Today's Date:</label>
-        [date date-today]
+    <label> Today's Date: <span class="form-required">*</span></label>
+        [date* date-today]
 </div>
 
 <div class="column dt-sc-one-column">

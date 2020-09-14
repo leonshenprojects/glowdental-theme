@@ -59,28 +59,53 @@
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Are you suffering from any of the following symptoms? <span class="form-required">*</span></label>
-        [checkbox* symptoms "Sore throat" "Runny nose" "Post nasal drip" "Sneezing" "Cough" "Fever" "Shortness of breath" "Loss of taste" "Loss of smell" "None of the above symptoms"]
+    <label> Do you have a confirmed diagnosis of COVID-19? <span class="form-required">*</span></label>
+        [checkbox* confirmed-case exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Have you returned from overseas travel in the last 14 days? <span class="form-required">*</span></label>
+    <label> Are you waiting for a COVID 19 test or the results, or considered a probable case, or been asked to self-isolate? <span class="form-required">*</span></label>
+        [checkbox* possible-exposure exclusive "Waiting for the test" "Waiting for the result" "I am considered a probable case" "I have been asked to self-isolate" "None of the above"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you had close contact with other people in the last 14 days who are probable or confirmed to have COVID 19? <span class="form-required">*</span></label>
+        [checkbox* exposure-to-infected exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Do you have new or worsening symptoms of an acute respiratory infection with at least one of the following with or without fever? (can choose one or more): <span class="form-required">*</span></label>
+        [checkbox* symptoms "Cough" "Sore throat" "Shortness of breath" "Runny nose, sneezing, post-nasal drip (coryza)" "Loss of smell (anosmia)" "None of the above"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you travelled overseas in the last 14 days? <span class="form-required">*</span></label>
         [checkbox* return-from-overseas exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Have you been in contact with anybody who has returned from overseas travel in the last 14 days?  <span class="form-required">*</span></label>
+    <label> Have you had direct contact with someone in the last 14 days who has travelled overseas? <span class="form-required">*</span></label>
         [checkbox* exposure-to-traveler exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Have you been in contact with anybody who has been in self isolation or has been quarantined?  <span class="form-required">*</span></label>
-        [checkbox* exposure-to-quarantined exclusive "Yes" "No"]
+    <label> Do you work on an international aircraft or shipping vessel? <span class="form-required">*</span></label>
+        [checkbox* high-risk-occupation-1 exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Have you been in contact with anybody who may be a suspect case for COVID 19 (Coronavirus Disease)?  <span class="form-required">*</span></label>
-        [checkbox* exposure-to-suspected-case exclusive "Yes" "No"]
+    <label> Do you work or have you recently worked at an international airport or maritime port in areas/conveniences visited by international arrivals? <span class="form-required">*</span></label>
+        [checkbox* high-risk-occupation-2 exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Do you work or have you recently worked in customs, immigration, or at managed quarantine/isolation facilities? <span class="form-required">*</span></label>
+        [checkbox* high-risk-occupation-3 exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Are you a household member or community contact of aircrew? <span class="form-required">*</span></label>
+        [checkbox* high-risk-occupation-4 exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">

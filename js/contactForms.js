@@ -3,17 +3,17 @@ function addFormAnalytics() {
     document.addEventListener( 'wpcf7mailsent', function( event ) {
         switch (event.detail.contactFormId) {
             case '7707' :
-                _gaq.push(['_trackEvent', 'Contact Form', 'Submit']);
+                ga('send', 'event', 'Form', 'submit', 'Contact Form');
                 console.log('Contact form sent');
                 break;
 
             case '8816' :
-                _gaq.push(['_trackEvent', 'COVID-19 Screening Form', 'Submit']);
+                ga('send', 'event', 'Form', 'submit', 'COVID-19 Screening Form');
                 console.log('COVID-19 screening form sent');
                 break;
 
             case '8753' :
-                _gaq.push(['_trackEvent', 'Medical Questionnaire Form', 'Submit']);
+                ga('send', 'event', 'Form', 'submit', 'Medical Questionnaire Form');
                 console.log('Medical Questionnaire Form sent');
                 break;
         }

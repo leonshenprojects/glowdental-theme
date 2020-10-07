@@ -66,3 +66,7 @@
     border: 0;
     padding: 0;
 }
+
+h1.simple-title {
+    text-align: center;
+}

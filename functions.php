@@ -2,7 +2,7 @@
 add_action( 'wp_enqueue_scripts', 'minim_child_enqueue_styles', 100 );
 function minim_child_enqueue_styles() {
     wp_enqueue_style( 'minim-parent', get_theme_file_uri('/style.css'), array(), '1.0' );
-    wp_enqueue_style( 'generic-styles', get_theme_file_uri('/css/generic.css'), array(), '1.4' );
+    wp_enqueue_style( 'generic-styles', get_theme_file_uri('/css/generic.css'), array(), '1.5' );
     wp_enqueue_style( 'custom-header-styles', get_theme_file_uri('/css/header.css'), array(), '1.0' );
     wp_enqueue_style( 'custom-footer-styles', get_theme_file_uri('/css/footer.css'), array(), '1.0' );
     wp_enqueue_style( 'custom-services-styles', get_theme_file_uri('/css/services.css'), array(), '1.0' );

@@ -81,7 +81,7 @@ do_action( 'minim_hook_top' ); ?>
                                     </a>
 
                                     <a class="topBar__item customButton1 customButton1--collapsableLabel" href="tel:+6496002774">
-                                        <i class="fa fa-phone"></i>
+                                        <i class="fa fa-phone fa-flip-horizontal"></i>
                                         <span class="customButton1__label">(09) 600 2774</span>
                                     </a>
                                 </div>

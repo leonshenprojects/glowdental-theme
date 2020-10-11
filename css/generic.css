@@ -69,6 +69,6 @@
 
 h1.simple-title {
     max-width: 900px;
-    margin: auto;
+    margin: 0px auto 40px;
     text-align: center;
 }

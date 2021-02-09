@@ -62,7 +62,7 @@ do_action( 'minim_hook_top' ); ?>
             	        <div class="container">
                             <div class="topBar">
                                 <div class="topBar__left">
-                                    <a class="customButton1" target="_blank" href="https://www.fresha.com/a/glow-dental-auckland-101-lunn-avenue-yv7vmgif/booking?menu=true">
+                                    <a class="customButton1" href="/contact-us">
                                         <span>BOOK NOW</span>
                                     </a>
                                 </div>

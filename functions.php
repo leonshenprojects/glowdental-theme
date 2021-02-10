@@ -6,7 +6,7 @@ function minim_child_enqueue_styles() {
     wp_enqueue_style( 'custom-header-styles', get_theme_file_uri('/css/header.css'), array(), '1.0' );
     wp_enqueue_style( 'custom-footer-styles', get_theme_file_uri('/css/footer.css'), array(), '1.0' );
     wp_enqueue_style( 'custom-services-styles', get_theme_file_uri('/css/services.css'), array(), '1.0' );
-    wp_enqueue_style( 'custom-form-styles', get_theme_file_uri('/css/customForm.css'), array(), '1.1' );
+    wp_enqueue_style( 'custom-form-styles', get_theme_file_uri('/css/customForm.css'), array(), '1.2' );
 
     wp_enqueue_script( 'custom-contactForms-scripts', get_theme_file_uri('/js/contactForms.js'), array(), '1.1', true );
     wp_enqueue_script( 'custom-services-scripts', get_theme_file_uri('/js/services.js'), array(), '1.0', true );

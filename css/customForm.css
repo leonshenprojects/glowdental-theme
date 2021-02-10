@@ -61,7 +61,7 @@
     background-color: rgba(0,0,0,0.1);
 }
 
-.wpcf7-form-control-clear-wrap input {
+.wpcf7-form-control-clear-wrap input[type="button"] {
     color: #3b3e47;
     border: 1px;
     border-color: #3b3e47;

@@ -57,6 +57,18 @@
     padding: 19px 40px 19px;
 }
 
+.wpcf7-form-control-signature-body canvas {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.wpcf7-form-control-clear-wrap input {
+    color: #3b3e47;
+    border: 1px;
+    border-color: #3b3e47;
+    border-style: solid;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 767px) {	
     .customForm .column {
         margin-left: 2%;

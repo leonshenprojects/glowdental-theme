@@ -1,0 +1,226 @@
+<div class="column dt-sc-one-column">
+    <h3>Personal Details:</h3>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Title: <span class="form-required">*</span></label>
+        [select* title include_blank "Miss" "Mr" "Mrs" "Master" "Ms"]
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> First Name: <span class="form-required">*</span></label>
+            [text* your-first-name]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Last Name: <span class="form-required">*</span></label>
+            [text* your-last-name]
+    </div>
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> Occupation / School:</label>
+            [text your-occupation-or-school]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Date Of Birth: <span class="form-required">*</span></label>
+            [date* your-dob]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <br>
+    <h3>Contact Details:</h3>
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> Mobile phone: <span class="form-required">*</span></label>
+            [tel* your-mobile-phone]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Home phone:</label>
+            [tel your-home-phone]
+    </div>
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> Work phone:</label>
+            [tel your-work-phone]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Email: <span class="form-required">*</span></label>
+            [email* your-email]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Address: <span class="form-required">*</span></label>
+        [text* your-address-line-1]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    [text your-address-line-2]
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first customForm--group">
+        [text* your-city placeholder "City"]
+    </div>
+
+    <div class="column dt-sc-one-half customForm--group">
+        [text* your-post-code placeholder "Postal / Zip Code"]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <br>
+    <h3>Emergency Contact Person:</h3>
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> Name: <span class="form-required">*</span></label>
+            [text* your-emergency-contact-name]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> Phone number: <span class="form-required">*</span></label>
+            [tel* your-emergency-contact-phone]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <br>
+    <h3>How did you hear about us? <em>(Please tick where applicable)</em></h3>
+</div>
+
+<div class="column dt-sc-one-column">
+    [checkbox referrer "Friend (please advise their name below)" "Word of mouth" "Google" "Facebook" "Instagram" "Other: (please advise below)" ]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Referrer name: (If applicable)</label>
+        [text referrer-name]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Please let us know how you found us: (If applicable)</label>
+        [textarea referrer-other]
+</div>
+
+<div class="column dt-sc-one-column">
+    <br>
+    <h3>Medical Information:</h3>
+</div>
+
+<div class="customForm__group">
+    <div class="column dt-sc-one-half first">
+        <label> Medical doctor's name (GP):</label>
+            [text your-GP]
+    </div>
+
+    <div class="column dt-sc-one-half">
+        <label> GP's phone: (If known)</label>
+            [tel your-GP-phone]
+    </div>
+</div>
+
+<div class="column dt-sc-one-column">
+    <br>
+    <h3>Medical History:</h3>
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Do you require antibiotics before you receive any dental treatment?</label>
+        [checkbox require-anibiotics exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Are you attending or receiving treatment from a doctor or hospital?</label>
+        [checkbox receiving-treatment exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label><em>If yes, please provide further details:</em></label>
+        [textarea treatment-details placeholder "Details"]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Are you pregnant?</label>
+        [checkbox pregnant exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label><em>If yes, please advise details e.g. how many months:</em></label>
+        [text pregnancy-details]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Are you taking and tablets, medicines, pills, or drugs? (this includes any health supplements, regular medication from doctors, and recreational drugs)</label>
+        [checkbox medication exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label><em>If yes, please list:</em></label>
+        [text medication-details]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Do you smoke?</label>
+        [checkbox smoking exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label><em>If yes, please advise details:</em></label>
+        [text smoking-details]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Please tick the following conditions if any are applicable to you:</label>
+        [checkbox medical-conditions "Heart problems / pacemakers / angina / stroke / heart murmur / open heart surgery" "Rheumatic fever" "Jaundice / liver disease" "Asthma" "High blood pressure" "Kidney problems" "Anaemia" "Gastric problems" "Bronchitis or chest problems" "Drug dependence" "Sinus / Hay fever" "Severe headaches" "Hepatitis- specify type A, B, C" "Depression" "Epilepsy / fainting attacks / blackouts" "Cold sores" "Diabetes" "Arthritis" "Radiotherapy" "Allergies" "Excessive bleeding / bruising" "Prosthetic surgery (heart valve, hip, knee replacement etc.)" "Cancer" "Osteoporosis" "Taking or have taken Fosamax" "HIV/AIDS" "Other (Please specify)"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Hepatitis type: (If applicable)</label>
+        [text hepatitis-type]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Other conditions: (If applicable)</label>
+        [textarea other-conditions]
+</div>
+
+<div class="column dt-sc-one-column customForm--group">
+    <label> Although rare, accidental injury to staff can occur during handling of used instruments. If this happens during the course of your treatment our practice requires both the patient and staff member to undertake confidential blood tests. Do you agree to do a blood test if required?</label>
+        [checkbox* blood-test-agreement exclusive "Yes" "No" "Wish to discuss with the dentist"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <p><em>Please be advised by signing this document you agree that any accounts remaining unpaid without being discussed and approved by the dentist may be sent to debt collection where further action will be taken to collect the amount owed which may include but is not limited to further costs being added.</em></p>
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Full name: <span class="form-required">*</span></label>
+        [text* your-full-name]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Signature: <span class="form-required">*</span></label>
+        [signature* signature]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Date: <span class="form-required">*</span></label>
+        [date* date-today]
+</div>
+
+<div class="customForm__submit">
+    [submit "Submit"]
+</div>

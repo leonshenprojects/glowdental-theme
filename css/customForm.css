@@ -69,6 +69,10 @@
     border-radius: 10px;
 }
 
+div#ui-datepicker-div {
+    z-index:1000!important;
+}
+
 @media only screen and (max-width: 767px) {	
     .customForm .column {
         margin-left: 2%;

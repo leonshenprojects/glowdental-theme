@@ -14,4 +14,6 @@ function minim_child_enqueue_styles() {
     wp_enqueue_script( 'custom-font-awesome', 'https://kit.fontawesome.com/c5cc09af3e.js', array(), '1.0.0', true );
     wp_enqueue_script( 'custom-booking-widget', 'https://www.corepractice.is/Scripts/widget/client.js', array(), '1.0.0', true );
 }
+
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 ?>

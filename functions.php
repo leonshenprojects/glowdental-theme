@@ -15,12 +15,22 @@ function minim_child_enqueue_styles() {
     wp_enqueue_script( 'custom-booking-widget', 'https://www.corepractice.is/Scripts/widget/client.js', array(), '1.0.0', true );
 }
 
-add_action('wp_head', 'cvf_ps_enqueue_datepicker');
-function cvf_ps_enqueue_datepicker() {
-    wp_enqueue_script('jquery-ui-datepicker');
-    wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
-   
+/**
+ * Load jQuery datepicker.
+ *
+ * By using the correct hook you don't need to check `is_admin()` first.
+ * If jQuery hasn't already been loaded it will be when we request the
+ * datepicker script.
+ */
+function wpse_enqueue_datepicker() {
+    // Load the datepicker script (pre-registered in WordPress).
+    wp_enqueue_script( 'jquery-ui-datepicker' );
+
+    // You need styling for the datepicker. For simplicity I've linked to the jQuery UI CSS on a CDN.
+    wp_register_style( 'jquery-ui', 'https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css' );
+    wp_enqueue_style( 'jquery-ui' );  
 }
+add_action( 'wp_enqueue_scripts', 'wpse_enqueue_datepicker' );
 
 /*
 Activate HTML5 fallback support

@@ -19,7 +19,3 @@ function addFormAnalytics() {
 if (document.getElementsByClassName("wpcf7").length) {
     addFormAnalytics();
 }
-
-jQuery(document).ready(function($) {
-    $("#datepicker").datepicker();
-});

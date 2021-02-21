@@ -8,27 +8,10 @@ function minim_child_enqueue_styles() {
     wp_enqueue_style( 'custom-services-styles', get_theme_file_uri('/css/services.css'), array(), '1.0' );
     wp_enqueue_style( 'custom-form-styles', get_theme_file_uri('/css/customForm.css'), array(), '1.4' );
 
-    wp_enqueue_script( 'custom-contactForms-scripts', get_theme_file_uri('/js/contactForms.js'), array(), '1.2', true );
+    wp_enqueue_script( 'custom-contactForms-scripts', get_theme_file_uri('/js/contactForms.js'), array(), '1.3', true );
     wp_enqueue_script( 'custom-services-scripts', get_theme_file_uri('/js/services.js'), array(), '1.0', true );
     wp_enqueue_script( 'custom-staffTiles-scripts', get_theme_file_uri('/js/staffTiles.js'), array(), '1.0', true );
     wp_enqueue_script( 'custom-font-awesome', 'https://kit.fontawesome.com/c5cc09af3e.js', array(), '1.0.0', true );
     wp_enqueue_script( 'custom-booking-widget', 'https://www.corepractice.is/Scripts/widget/client.js', array(), '1.0.0', true );
 }
-
-/**
- * Load jQuery datepicker.
- *
- * By using the correct hook you don't need to check `is_admin()` first.
- * If jQuery hasn't already been loaded it will be when we request the
- * datepicker script.
- */
-function wpse_enqueue_datepicker() {
-    // Load the datepicker script (pre-registered in WordPress).
-    wp_enqueue_script( 'jquery-ui-datepicker' );
-
-    // You need styling for the datepicker. For simplicity I've linked to the jQuery UI CSS on a CDN.
-    wp_register_style( 'jquery-ui', 'https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css' );
-    wp_enqueue_style( 'jquery-ui' );  
-}
-add_action( 'wp_enqueue_scripts', 'wpse_enqueue_datepicker' );
 ?>

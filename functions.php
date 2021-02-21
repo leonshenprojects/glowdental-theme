@@ -13,7 +13,13 @@ function minim_child_enqueue_styles() {
     wp_enqueue_script( 'custom-staffTiles-scripts', get_theme_file_uri('/js/staffTiles.js'), array(), '1.0', true );
     wp_enqueue_script( 'custom-font-awesome', 'https://kit.fontawesome.com/c5cc09af3e.js', array(), '1.0.0', true );
     wp_enqueue_script( 'custom-booking-widget', 'https://www.corepractice.is/Scripts/widget/client.js', array(), '1.0.0', true );
+}
+
+add_action('wp_head', 'cvf_ps_enqueue_datepicker');
+function cvf_ps_enqueue_datepicker() {
     wp_enqueue_script('jquery-ui-datepicker');
+    wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+   
 }
 
 /*

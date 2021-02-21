@@ -76,7 +76,7 @@ function add_l18n_datepicker_script() {
 		/* CDN */
 		// wp_enqueue_script( 'jquery-ui-i18n-' . $locale, 'http://jquery-ui.googlecode.com/svn/tags/latest/ui/i18n/jquery.ui.datepicker-' . $locale . '.js', array( 'jquery-ui-datepicker' ), $wp_jquery_ui_ver, true );
 		/* local */
-		wp_enqueue_script( 'jquery-ui-i18n-' . $locale, get_theme_file_uri('/js/jquery.ui.datepicker-' . $locale . '.js') , array( 'jquery-ui-datepicker' ), $wp_jquery_ui_ver, true );
+		wp_enqueue_script( 'jquery-ui-i18n-' . $locale, get_theme_file_uri('/js/i18n/jquery.ui.datepicker-' . $locale . '.js') , array( 'jquery-ui-datepicker' ), $wp_jquery_ui_ver, true );
 	}
 }
 

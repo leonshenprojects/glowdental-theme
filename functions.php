@@ -31,11 +31,4 @@ function wpse_enqueue_datepicker() {
     wp_enqueue_style( 'jquery-ui' );  
 }
 add_action( 'wp_enqueue_scripts', 'wpse_enqueue_datepicker' );
-
-/*
-Activate HTML5 fallback support
-See: http://contactform7.com/faq/does-contact-form-7-support-html5-input-types/
-*/
-
-add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 ?>

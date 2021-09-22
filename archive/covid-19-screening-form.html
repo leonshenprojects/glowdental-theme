@@ -31,18 +31,18 @@
 </div>
 
 <div class="column dt-sc-one-column">
+    <label> Do you have new or worsening symptoms of the following (can choose one or more)? <span class="form-required">*</span></label>
+        [checkbox* symptoms "Cough" "Sore throat" "Shortness of breath" "Runny nose, sneezing, post-nasal drip" "Temporary loss of smell" "Fever" "None of the above"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Do you have any of the following symptoms that are not related to another diagnosis? <span class="form-required">*</span></label>
+        [checkbox* less-common-symptoms "Fever only" "Diarrhoea" "Headache" "Muscle pain" "Nausea/vomiting" "None of the above"]
+</div>
+
+<div class="column dt-sc-one-column">
     <label> Have you had close contact with other people in the last 14 days who are probable or confirmed to have COVID 19? <span class="form-required">*</span></label>
         [checkbox* exposure-to-infected exclusive "Yes" "No"]
-</div>
-
-<div class="column dt-sc-one-column">
-    <label> Do you have new or worsening symptoms of an acute respiratory infection with at least one of the following with or without fever? (can choose one or more): <span class="form-required">*</span></label>
-        [checkbox* symptoms "Cough" "Sore throat" "Shortness of breath" "Runny nose, sneezing, post-nasal drip (coryza)" "Loss of smell (anosmia)" "None of the above"]
-</div>
-
-<div class="column dt-sc-one-column">
-    <label> Do you have any of the following less common symptoms that are not related to another diagnosis? <span class="form-required">*</span></label>
-        [checkbox* less-common-symptoms "Fever only" "Diarrhoea" "Headache" "Muscle pain" "Nausea/vomiting" "None of the above"]
 </div>
 
 <div class="column dt-sc-one-column">
@@ -51,32 +51,47 @@
 </div>
 
 <div class="column dt-sc-one-column">
+    <label> Have you worked on an international aircraft or shipping vessel (this includes cleaning staff) in the last 14 days? <span class="form-required">*</span></label>
+        [checkbox* high-risk-occupation-0 exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you exited from an MIQ facility in the last 14 days? <span class="form-required">*</span></label>
+        [checkbox* recently-in-MIQ exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
+    <label> Have you stayed in or travelled from an area with a growing COVID community outbreak in the last 14 days? <span class="form-required">*</span></label>
+        [checkbox* exposure-to-community-outbreak exclusive "Yes" "No"]
+</div>
+
+<div class="column dt-sc-one-column">
     <label> Have you had direct contact with someone in the last 14 days who has travelled overseas? <span class="form-required">*</span></label>
         [checkbox* exposure-to-traveler exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Do you work on an international aircraft or shipping vessel? <span class="form-required">*</span></label>
+    <label> Have you had a direct contact with any one of the following people in the last 14 days? <span class="form-required">*</span></label>
+    <ul style="margin: 10px 0px 10px 20px;">
+        <li>Border staff (international flights)</li>
+        <li>Quarantine and isolation facility staff</li>
+        <li>International aircraft and shipping vessel crew</li>
+    </ul>
         [checkbox* high-risk-occupation-1 exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Do you work or have you recently worked at an international airport or maritime port in areas/conveniences visited by international arrivals? <span class="form-required">*</span></label>
+    <label> Have you been to at an international airport or maritime port in areas/conveniences visited by international arrivals in the 14 days? <span class="form-required">*</span></label>
         [checkbox* high-risk-occupation-2 exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Do you work or have you recently worked in customs, immigration, or at managed quarantine/isolation facilities? <span class="form-required">*</span></label>
+    <label> In the last 14 days, have you worked in cold storage areas of facilities that receive imported chilled and frozen goods directly from an international or maritime port? <span class="form-required">*</span></label>
         [checkbox* high-risk-occupation-3 exclusive "Yes" "No"]
 </div>
 
 <div class="column dt-sc-one-column">
-    <label> Are you a household member or community contact of aircrew? <span class="form-required">*</span></label>
-        [checkbox* high-risk-occupation-4 exclusive "Yes" "No"]
-</div>
-
-<div class="column dt-sc-one-column">
-    <label> Have you been to one of the <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-health-advice-public/contact-tracing-covid-19/covid-19-contact-tracing-locations-interest" target="_blank"><strong>locations listed by the Ministry of Health</strong></a> in the last 14 days and/or considered to be either a ‘Casual Plus Contact’ or a 'Casual Contact'? <span class="form-required">*</span></label>
+    <label> Have you been to one of the <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-health-advice-public/contact-tracing-covid-19/covid-19-contact-tracing-locations-interest" target="_blank"><em>locations listed by the Ministry of Health (please click here to follow the link)</em></a> in the last 14 days? <span class="form-required">*</span></label>
         [checkbox* covid-exposure exclusive "Yes" "No"]
 </div>
 
